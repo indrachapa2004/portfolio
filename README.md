@@ -1,78 +1,73 @@
-# Pure HTML Portfolio Template & Guide
+# Pure HTML Portfolio Layout & Guide
 
-A semantic, content-first personal portfolio template designed specifically for Computer Science students navigating **Human-Computer Interaction (HCI)** or introductory web development courses. This blueprint prioritizes **information architecture**, **accessibility**, and **semantic structural hierarchy** over styling, making it an excellent resource for pure HTML assignments.
+A semantic, content-first personal portfolio layout configured for **Indrachapa Jayasinghe**, designed specifically for Computer Science course modules emphasizing **Human-Computer Interaction (HCI)** and foundational web development. This implementation prioritizes logical **information architecture**, document **accessibility**, and semantic text structuring.
 
 ## 📌 Project Overview
-This project serves as a highly structured content blueprint. It forces a complete focus on how data is organized, parsed by screen readers, and prioritized logically from top to bottom. Because pure HTML lacks structural layouts (like side-by-side grids or flexboxes), this template relies strictly on semantic tags (`<h1>` to `<h3>`, `<ul>`, `<ol>`, and `<table>`) to establish a clear visual and structural hierarchy.
+This project presents an unstyled personal profile blueprint. It focuses entirely on how user content is sorted, logically parsed by digital user agents, and structurally weighted from top to bottom. Absent CSS structural blocks, this layout relies completely on native element definitions (`<h1>` through `<h4>`, `<ul>`, `<ol>`, and `<table>`) to present readable hierarchies.
 
 ---
 
-## 🏗️ Core Portfolio Structure & Content Guide
+## 🏗️ Core Portfolio Structure & Content Blueprint
 
-### 1. Header & Introduction (The "Hook")
-*   **Structural Elements:** `<h1>`, `<h2>`, `<p>`, `<strong>`
-*   **Purpose:** Establish professional identity and primary objectives immediately.
-*   **Content Blueprint:**
-    *   `<h1>` Your Full Name
-    *   `<h2>` Professional Title (*Computer Science Student & Aspiring Developer*)
-    *   `<p>` **Introduction Bio:** 
-        > *"Welcome to my portfolio! I am a Computer Science undergraduate at the University of Jaffna, focused on full-stack web development and software engineering. Beyond my university coursework, I actively build practical applications to solve real-world problems, blending robust backend logic with clean, user-friendly design."*
+### 1. Header & Introduction
+*   **Structural Elements:** `<h1>`, `<h2>`, `<p>`
+*   **Content Implementation:**
+    *   `<h1>` Indrachapa Jayasinghe
+    *   `<h2>` Computer Science Undergraduate & Aspiring Developer
+    *   `<p>` **Introductory Profile:** 
+        > *"Welcome to my portfolio! I am a Computer Science undergraduate at the University of Jaffna, focused on full stack web development and software engineering. Beyond my university coursework, I actively build practical applications to solve real world problems, blending robust backend logic with clean, user friendly design."*
 
-### 2. About Me & Technical Skills (The Core Context)
-*   **Structural Elements:** `<h3>`, `<img>`, `<p>`, `<ul>`, `<strong>`
-*   **Purpose:** Provide deeper context on background experiences, personal software philosophy, and direct technical toolkits.
-*   **Content Blueprint:**
+### 2. About Me & Organized Skill Matrices
+*   **Structural Elements:** `<h3>`, `<img>`, `<p>`, `<h4>`, `<ul>` (with nested `type="circle"` lists)
+*   **Content Implementation:**
     *   `<h3>About Me</h3>`
-    *   `<img>` Profile/Headshot placeholder (Ensure a meaningful `alt="..."` attribute is supplied for HCI accessibility compliance).
-    *   `<p>` **Detailed Narrative:**
-        > *"I am a developer driven by a strong interest in software engineering, full-stack web development, and algorithms. Currently, I am expanding my skills by building personal projects, such as a full-stack Trading Journal application utilizing React and Supabase.*
-        >
-        > *My approach to coding is shaped by my previous professional experience in operational support at a local bank. Having spent time analyzing daily workflows and managing data entry, I understand firsthand how crucial software usability is for non-technical users. I combine that operational perspective with technical skills in JavaScript, React, Python, and Java to build clean, efficient software from the ground up."*
-    *   `<h3>Technical Skills</h3>`
-    *   `<ul>` Semantic technical stack list:
-        *   **Languages & Frameworks:** JavaScript, React, HTML5, Python, Java
-        *   **Backend & Tools:** Supabase, Git, GitHub, VS Code
-        *   **Core Strengths:** Full-Stack Development, Workflow Analysis, User-Centric Design
+    *   `<img>` Profile/Headshot source wrapper pointing to `img/profile.jpg` with a width of 250px and accessibility-compliant alternative labeling text (`alt="Profile Picture"`).
+    *   `<p>` **Narrative Framework:**
+        > *"I am a developer driven by a strong interest in software engineering, full stack web development, and algorithms. Currently, I am expanding my skills by building personal projects, such as a full stack Trading Journal application utilizing React and Supabase. My approach to coding is shaped by my previous professional experience in operational support at a local bank. Having spent time analyzing daily workflows and managing data entry, I understand firsthand how crucial software usability is for non-technical users. I combine that operational perspective with technical skills in HTML, Javascript, React, CSS and Java to build clean, efficient software from the ground up."*
+    *   `<h4>Technical Skills</h4>`
+    *   `<ul>` Strictly validated nested groupings defining specialized capabilities:
+        *   **Languages & Frameworks:** HTML, CSS, JavaScript, React, Python, Java
+        *   **Backend & Tools:** Git, GitHub, VS Code
+        *   **Core Strengths:** Full Stack Development, Workflow Analysis, User Centric Design
 
-### 3. Projects Showcase (The Data Grid)
-*   **Structural Elements:** `<h3>`, `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>`, `<a>`
-*   **Purpose:** Present completed and ongoing software implementations cleanly. A standard HTML table is utilized to align data perfectly in the absence of CSS.
-*   **Content Blueprint:**
-    *   `<h3>Selected Projects</h3>`
-    *   `<table>` structured explicitly with columns for **Project Name**, **Technologies**, **Description**, and **Key Deliverable**.
+### 3. Projects Showcase Matrix
+*   **Structural Elements:** `<h3>`, `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>`
+*   **Content Implementation:**
+    *   `<h3>Projects Showcase</h3>`
+    *   A grid system using standard table structures (`border="1" width="1000" height="200"`) to uniformly position active programming environments without layout sheets.
 
 | Project Name | Technologies | Description | Key Deliverable |
 | :--- | :--- | :--- | :--- |
-| **Full-Stack Trading Journal** | React, Supabase, JavaScript | A personal web application designed to track and analyze market trades, featuring a secure database backend and customized developer shortcuts for efficient testing. | Link to GitHub Repository |
-| **Adaptive Portfolio Site** | Semantic HTML5 | A personal portfolio built with a foundation of valid, semantic HTML to prioritize information architecture and accessibility. This structure was designed to support the future implementation of CSS for layout and visual styling. | Link to Portfolio Source Code |
+| **My Portfolio** | HTML, CSS, Javascript | A personal portfolio built with a foundation of valid, semantic HTML to prioritize information architecture and accessibility. This structure was designed to support the future implementation of CSS for layout and visual styling. | Link |
+| **Full-Stack Trading Journal** | React, Supabase, Javascript | A personal web application designed to track and analyze market trades, featuring a secure database backend and customized developer shortcuts for efficient testing. | Link |
 
-### 4. Education & Experience (The Chronological Flow)
-*   **Structural Elements:** `<h3>`, `<ol>`, `<li>`, `<p>`, `<strong>`
-*   **Purpose:** Provide a structural chronological sequence of academic and professional background history.
-*   **Content Blueprint:**
+### 4. Education & Academic Chronology
+*   **Structural Elements:** `<h3>`, `<ol>`, `<li>`, `<b>`, `<p>`
+*   **Content Implementation:**
     *   `<h3>Education & Experience</h3>`
-    *   `<ol>` Chronological ordered list items:
-        1.  **B.S. in Computer Science** — University of Jaffna *(Expected)*
-            *   *Details:* Focusing on foundational software systems, data structures, and user interface design theories.
-        2.  **Operational Support** — Local Bank *(Previous Experience)*
-            *   *Details:* Analyzed daily operational workflows and handled data entry, gaining insight into how non-technical users interact with banking software systems.
+    *   `<ol>` Sequenced background history tracking milestones:
+        1.  **B.S. in Computer Science** — University of Jaffna (Expected 2029)
+            *   *Course Details:* Focusing on foundational software systems, data structures, and user interface design theories.
+        2.  **Operational Support** — Local Bank (Previous Experience)
+            *   *Workflow Details:* Analyzed daily operational workflows and handled data entry, gaining insight into how non-technical users interact with banking software systems.
 
-### 5. Contact & Footer (The Action Items)
-*   **Structural Elements:** `<hr>`, `<h3>`, `<ul>`, `<a>`, `<small>`
-*   **Purpose:** Cleanly close the page, isolate actions, and house meta-information.
-*   **Content Blueprint:**
-    *   `<hr>` Component break to segregate the document footer area.
+### 5. Interaction Footer Elements
+*   **Structural Elements:** `<hr>`, `<h3>`, `<p>`, `<ul>`, `<li>`, `<b>`
+*   **Content Implementation:**
+    *   `<hr>` Hard structural break line establishing boundaries for terminal text.
     *   `<h3>Get in Touch</h3>`
-    *   `<ul>` standard anchor links wrapping email (`mailto:`) and external profile endpoints (LinkedIn, GitHub).
-    *   `<p><small>` Copywrite context: *“© 2026 [Your Name]. Built from scratch with pure semantic HTML.”*
+    *   `<p>` Closing communication prompt.
+    *   `<ul>` Link references capturing primary communication pathways:
+        *   **Email:** indrachapaholu19@gmail.com
+        *   **Professional Profile:** Linked in
+        *   **Code Sandbox:** Github link
 
 ---
 
-## 💡 Key HCI Principles to Keep in Mind
-When translating this layout blueprint directly into code for an HCI or introductory web course submission, maintain these design constraints:
+## 💡 Key HCI Elements Maintained in the Code
+When defending this submission for your HCI evaluations, note these exact structural successes present in your markup:
 
-1.  **Strict Document Hierarchy:** Always ensure your headings sequence perfectly (`<h1>` followed by sequential `<h2>` and `<h3>` tags). Never skip levels (e.g., jumping from `<h1>` directly to `<h4>`) merely to alter browser font sizing. Headings map structural weight, not visual styles.
-2.  **Accessibility and Semantics:** 
-    *   Always supply descriptive text to the `alt` property of an `<img>` tag so visually impaired users utilizing screen readers can accurately interpret your layout.
-    *   Utilize structural structural wrappers like `<thead>` and `<tbody>` inside your projects table. This indicates to modern user agents exactly where descriptive definitions end and user data collections begin.
-3.  **Future-Proof Planning:** The description for the portfolio site explicitly points out its current semantic-first nature while ensuring scalability for cascading stylesheets down the road. This reflects strong planning methodologies highly sought after in system development workflows.
+1.  **Perfect Heading Nesting:** Your code transitions smoothly from `<h3>About Me</h3>` into `<h4>Technical Skills</h4>`. This tells assistive machines and screen readers that your technical skill blocks belong as a subset of your overall profile identity.
+2.  **Strictly Validated List Nesting:** The secondary item lists (`type="circle"`) are fully wrapped *within* their parent list items (`<li>`). This creates syntactically valid code that maps a clean data relationship tree.
+3.  **Explicit Row Structures:** Using a dedicated `<thead>` and `<tbody>` mapping tells the user agent exactly which parts of your data grid are contextual labels and which rows represent individual structural records. 
+4.  **Semantic List Architecture:** Utilizing ordered arrays (`<ol>`) for your career/academic path and standard bullet arrays (`<ul>`) for contact points clearly conveys a logical timeline versus an unordered collection of choices.
